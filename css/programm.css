@@ -1,0 +1,38 @@
+*{
+    font-family: 'Open Sans', sans-serif;  
+}    
+
+.pipbody{
+    background-color:#000;  
+    background-image:radial-gradient(#444, #111); 
+    border-radius:30px;
+    padding:30px;
+    animation:colorPulse 5s infinite ease-in-out;
+    position:relative;
+}
+
+.scan{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(0,0,0,0),#7ff12a);
+    position: absolute;
+    animation:wave 5s infinite ease-in-out;
+    z-index: 99;
+    opacity: 0;
+    bottom:100%;
+    left: 0px;
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    color:#0c0;
+  }
+  50% {
+    color:#080;
+  }
+}
+    
+@keyframes wave {
+  0{bottom:100%;opacity: 0;}
+  100%{bottom:0px; opacity: 0.25;}
+}
